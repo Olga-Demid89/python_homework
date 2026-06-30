@@ -65,7 +65,7 @@ def test_contains_positive(input_str, symbol, expected):
     ("FiRst test", " ", True),
     (" . ", ".", True),
     (" ", "#", False),
-    ("QA-engineer", "a", True)
+    ("QA-engineer", "a", False)
 ])
 def test_contains_negative(input_str, symbol, expected):
     assert string_utils.contains(input_str, symbol) == expected
@@ -89,7 +89,7 @@ def test_delete_symbol_positive(input_str, symbol, expected):
     ("", "", ""),
     (" ", " ", ""),
     ("Teacher", "w", "Teacher"),
-    ("SKyPro", "k", "SyPro")
+    ("SKyPro", "k", "SKyPro")
 ])
 def test_delete_symbol_negative(input_str, symbol, expected):
     assert string_utils.delete_symbol(input_str, symbol) == expected
