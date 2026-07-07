@@ -1,0 +1,9 @@
+# В тестируемом классе StringUtils все представленные утилиты
+не распознают русский алфавит. (Пример: test_contains_positive("Строка", "т", True) ->
+-> Отображение в отчете: test_contains_positive[\u0421\u0442\u0440\u043e\u043a\u0430-\u0442-True] PASSED )
+
+# Утилиты регистрозависимы. (Пример 1: test_contains_negative("QA-engineer", "a", True) ->
+-> Отображение в отчете: test_contains_negative[QA-engineer-a-True] FAILED)
+(Пример 2: test_delete_symbol_negative("SKyPro", "k", "SyPro") ->
+-> Отражение в отчете: FAILED *:test_delete_symbol_negative[SKyPro-k-SyPro] - AssertionError: assert 'SKyPro' == 'SyPro')
+
