@@ -2,3 +2,5 @@ pytest==9.1.1
 
 selenium
 faker
+
+sqlalchemy
