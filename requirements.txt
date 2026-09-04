@@ -4,3 +4,4 @@ selenium
 faker
 
 sqlalchemy
+allure-python-commons
